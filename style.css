@@ -1,11 +1,47 @@
 :root { color-scheme: light; }
-body { margin: 0; background: #F6F5F1; color: #1C1C1A; font: 17px/1.6 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+body { margin: 0; background: #F6F5F1; color: #263A35; font: 17px/1.6 -apple-system, "Helvetica Neue", Arial, sans-serif; }
 main { max-width: 680px; margin: 0 auto; padding: 48px 24px 96px; }
 h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.5px; margin: 0 0 4px; }
 h2 { font-size: 22px; margin: 40px 0 8px; letter-spacing: -0.2px; }
+h3 { font-size: 18px; margin: 28px 0 6px; }
 p, li { color: #3A3A36; }
 .meta { color: #7A7A74; font-size: 15px; margin-bottom: 32px; }
-a { color: #1F6F4A; }
+a { color: #237A56; }
 nav { font-size: 15px; margin-bottom: 40px; }
 nav a + a { margin-left: 16px; }
 footer { margin-top: 64px; color: #7A7A74; font-size: 14px; }
+dl { margin: 0; }
+dt { font-weight: 600; margin-top: 14px; }
+dd { margin: 2px 0 0; color: #3A3A36; }
+.q { font-size: 18px; margin: 28px 0 6px; }
+
+/* Inside the app the page is pushed with its own back control, so the site's
+   own navigation and the top padding go. The app adds ?app=1. */
+html.app nav { display: none; }
+html.app main { padding-top: 12px; }
+
+/* Example pages: a book's day view, drawn the way the app draws it -- a box per
+   category or subject, one row per thread, the label as a tag on the right. */
+.page { background: #FCFBF8; border: 1px solid #E8E5DD; border-radius: 22px; padding: 18px 16px 12px; margin: 14px 0 6px; max-width: 360px; }
+.page .book { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; letter-spacing: -0.2px; margin-bottom: 2px; }
+.page .book i { display: inline-block; width: 28px; height: 28px; border-radius: 50%; }
+.page .said { color: #7A7A74; font-size: 14px; font-style: italic; margin: 0 0 12px; line-height: 1.4; }
+.page .day { color: #7A7A74; font-size: 13px; margin: 0 0 10px; }
+.box { border-radius: 18px; padding: 12px 12px 6px; margin: 0 0 10px; }
+.box .subject { font-weight: 700; font-size: 16px; margin: 0 0 8px 4px; display: flex; justify-content: space-between; }
+.box .subject small { font-weight: 400; color: #7A7A74; font-size: 13px; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: #FCFBF8; border-radius: 14px; padding: 9px 12px; margin-bottom: 6px; font-size: 15px; }
+.row .v { color: #263A35; font-weight: 600; }
+.row .tag { flex: none; font-size: 12px; padding: 3px 10px; border-radius: 999px; background: rgba(0,0,0,0.06); color: #4A4A45; }
+.bullets { margin: -2px 0 6px 20px; padding: 0; font-size: 13px; color: #6A6A64; }
+.bullets li { margin: 0; }
+/* Box washes, from the app's palette. */
+.wash-green { background: #E4EBE0; } .wash-green .subject, .wash-green .tag { color: #3F6B4B; }
+.wash-amber { background: #F6EAD2; } .wash-amber .subject, .wash-amber .tag { color: #A26B12; }
+.wash-blue  { background: #DCE8EC; } .wash-blue .subject,  .wash-blue .tag  { color: #3C6E7F; }
+.wash-rose  { background: #F5E0DC; } .wash-rose .subject,  .wash-rose .tag  { color: #B1574D; }
+.wash-plum  { background: #E9E2EF; } .wash-plum .subject,  .wash-plum .tag  { color: #6E5A8E; }
+.wash-sand  { background: #EEE8DE; } .wash-sand .subject,  .wash-sand .tag  { color: #7A6A55; }
+.labels { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 0; }
+.labels span { font-size: 13px; padding: 3px 10px; border-radius: 999px; background: #E4EBE0; color: #3F6B4B; }
+.note { color: #7A7A74; font-size: 15px; }

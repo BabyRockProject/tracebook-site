@@ -5,63 +5,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tracebook — Privacy Policy</title>
 <link rel="stylesheet" href="style.css">
+<script>if (location.search.indexOf('app=1') !== -1) document.documentElement.className = 'app';</script>
 </head>
 <body>
 <main>
 <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Tracebook · Last updated September 12, 2026</p>
+<p class="meta">Tracebook · Last updated September 16, 2026</p>
 
-<p>Tracebook is a personal journal. You tell it about your day, by voice or by typing, and it turns what you said into short "moments" you can look back on. This policy explains what information the app handles, where it goes, and what you can do about it. We have tried to write it the way we would want to read it.</p>
+<p>Tracebook is a personal journal. You tell it about your day, by voice or by typing, and it turns what you said into short "threads" sorted into books you can look back on. This policy explains what information the app handles, where it goes, and what you can do about it. We have tried to write it the way we would want to read it.</p>
 
 <h2>The short version</h2>
 <ul>
-  <li>You can use Tracebook without an account. In that case your moments stay on your phone.</li>
-  <li>If you sign in with Apple, your moments sync to our cloud so they follow you between devices.</li>
-  <li>What you say or type is sent to an AI service (Google Gemini) to be turned into moments. Voice recordings are processed and not kept.</li>
+  <li>You can use Tracebook without an account. In that case your books and threads stay on your phone.</li>
+  <li>If you sign in (with Apple, Google, or an email link), your books and threads sync to our cloud so they follow you between devices.</li>
+  <li>What you say or type is sent to an AI service (Google Gemini) to be turned into threads. Voice is transcribed on your phone by default; when a recording is sent, it is processed and not kept.</li>
   <li>We do not sell your information, show ads, or use advertising trackers.</li>
 </ul>
 
 <h2>What we collect</h2>
-<p><strong>Your moments.</strong> When you describe your day, we keep the result: a short activity label, a category (Food, Routine, Exercise, Location, Wellbeing, Other), and, if you mentioned them, a time, a duration and a note. You can edit or delete any moment.</p>
-<p><strong>Voice recordings and typed text.</strong> What you record or type is sent to our server and on to Google's Gemini API so it can be understood and structured. We do not store the audio or the raw text after this processing. Recordings are deleted from your phone as soon as they have been sent.</p>
-<p><strong>Trackers.</strong> The names, colours and icons of the trackers you create.</p>
-<p><strong>My List.</strong> Suggestions you save in the Inspire tab.</p>
-<p><strong>Account information.</strong> If you sign in with Apple, we receive a unique account identifier and the email address you choose to share (Apple lets you hide your real address). We do not receive your password.</p>
-<p><strong>Nothing else.</strong> Tracebook does not collect your location, contacts, photos, or device advertising identifiers, and does not include analytics or advertising SDKs.</p>
+<p><strong>Your threads.</strong> When you describe your day, we keep the result: for each thread, the book and box it belongs to (a category such as Food, or a subject such as Programming or Migraine), a short value, its label, and, if you mentioned them, a time, a duration and a note. You can edit or delete any thread.</p>
+<p><strong>Your books.</strong> The name, colour, icon and template of each book you create; the subjects a book has used, so they are named consistently; and, for a book designed with Custom, the design (its summary, grouping and labels) together with the description you gave and any answers.</p>
+<p><strong>Voice and typed text.</strong> By default your iPhone turns your speech into text using Apple's speech recognition, which may process the audio on Apple's servers under Apple's privacy terms; only the text is then sent to our server and on to Google's Gemini API to be understood and structured. Some accounts use Gemini for voice instead, in which case the recording itself is sent to our server and on to Gemini. We do not store the audio or the raw text after this processing, and recordings are deleted from your phone as soon as they have been sent.</p>
+<p><strong>My List and Inspire history.</strong> Suggestions you save in the Inspire tab, and a record of which suggestions you have been shown (kind and title), kept for about 45 days so they are not repeated.</p>
+<p><strong>Usage records.</strong> For each request to the AI service we keep a technical record: which function ran, the template, the size of the input, the number of tokens used, how long it took and whether it succeeded. These records never contain what you said or your threads. They are kept, without your account identifier, after an account is deleted.</p>
+<p><strong>Account and profile.</strong> If you sign in, we receive a unique account identifier and the email address you choose to share (Apple lets you hide your real address). We do not receive your password. A nickname and an avatar you pick are stored with your profile.</p>
+<p><strong>Nothing else.</strong> Tracebook does not collect your location, contacts, photos, or device advertising identifiers, and does not include analytics or advertising SDKs. Reminders are scheduled on your phone and never leave it.</p>
 
 <h2>How we use it</h2>
 <ul>
-  <li>To show you your own moments, trackers and saved list, and to keep them in sync across your devices when you are signed in.</li>
-  <li>To generate suggestions in the Inspire tab. Your recent moments (from the last two weeks) are sent to the AI service to produce a few recommendations. This feature is only available when you are signed in.</li>
-  <li>To fetch artwork for those suggestions. We look up covers and photos using only the title of the recommended book, film, album, podcast or a short generic phrase such as "tennis court" — never your moments or your identity.</li>
+  <li>To show you your own books, threads and saved list, and to keep them in sync across your devices when you are signed in.</li>
+  <li>To design a Custom book from your description, and to sort what you say into the right book, box and labels.</li>
+  <li>To generate suggestions in the Inspire tab. Your recent threads (from the last two weeks, across your books) are sent to the AI service to produce a few recommendations. This feature is only available when you are signed in.</li>
+  <li>To fetch artwork for those suggestions. We look up covers and photos using only the title of the recommended book, film, album, podcast or a short generic phrase such as "tennis court" — never your threads or your identity.</li>
+  <li>To keep the service healthy: the usage records above help us spot errors and manage costs.</li>
   <li>To respond when you contact us.</li>
 </ul>
 
 <h2>Where your information lives</h2>
-<p><strong>On your phone.</strong> As a guest, everything is stored locally on your device and nowhere else. If you later sign in, the moments on the phone are copied to your account once and then removed from local storage.</p>
-<p><strong>In our cloud.</strong> When you are signed in, your moments, trackers and saved list are stored in a database hosted by Supabase. Access is restricted to your own account.</p>
+<p><strong>On your phone.</strong> As a guest, everything is stored locally on your device and nowhere else. If you later sign in, the books and threads on the phone are copied to your account once and then removed from local storage.</p>
+<p><strong>In our cloud.</strong> When you are signed in, your books, threads, saved list and Inspire history are stored in a database hosted by Supabase. Access is restricted to your own account.</p>
+<p><strong>In backups.</strong> The database is copied every night and each copy is kept for 14 days, so something you delete can persist in a backup for up to 14 days before it is gone for good.</p>
 
 <h2>Services we rely on</h2>
 <ul>
-  <li><strong>Apple</strong> — Sign in with Apple, and app distribution through the App Store and TestFlight.</li>
-  <li><strong>Supabase</strong> — database, authentication and the server functions that process your entries.</li>
-  <li><strong>Google Gemini API</strong> — turns your speech or text into moments and produces Inspire suggestions. Requests are sent from our server; Google's use of API data is governed by its Gemini API terms.</li>
+  <li><strong>Apple</strong> — Sign in with Apple, on-device speech recognition, and app distribution through the App Store and TestFlight.</li>
+  <li><strong>Google</strong> — Sign in with Google, if you choose it.</li>
+  <li><strong>Supabase</strong> — database, authentication, backups and the server functions that process your entries.</li>
+  <li><strong>Google Gemini API</strong> — turns your speech or text into threads, designs Custom books and produces Inspire suggestions. Requests are sent from our server; Google's use of API data is governed by its Gemini API terms.</li>
   <li><strong>Open Library, Google Books, Apple's iTunes Search, and Pexels or Unsplash</strong> — artwork for Inspire cards, queried with titles only.</li>
 </ul>
 <p>Each of these providers processes data under its own privacy policy. We do not share your information with anyone else.</p>
 
 <h2>How long we keep it</h2>
-<p>Your moments, trackers and saved list are kept until you delete them or delete your account. Voice recordings and raw text are not retained after processing. Inspire suggestions are cached on your device for a day.</p>
+<p>Your books, threads and saved list are kept until you delete them or delete your account (plus up to 14 days in backups). Voice recordings and raw text are not retained after processing. Inspire history is kept for about 45 days; Inspire suggestions are cached on your device for a day. Usage records are kept without your identifier.</p>
 
 <h2>Your choices</h2>
 <ul>
   <li><strong>Use it without an account.</strong> Guest mode keeps everything on your phone.</li>
-  <li><strong>Edit or delete moments</strong> at any time from the Today tab. Deleting a tracker deletes every moment in it.</li>
-  <li><strong>Export your data</strong> from the Me tab.</li>
+  <li><strong>Edit or delete threads</strong> at any time from the Trace tab. Deleting a book deletes every thread in it.</li>
+  <li><strong>Export your data</strong> from your account card on the Me tab, as a spreadsheet (CSV) or a full backup (JSON).</li>
   <li><strong>Sign out</strong> from the Account screen. Your cloud data stays in your account until you delete it.</li>
-  <li><strong>Delete your account.</strong> Open the Account screen from the Me tab and choose "Delete account". This immediately and permanently removes your account and every moment, tracker and saved item in it. You can also email us at <a href="mailto:babyrockproject@gmail.com">babyrockproject@gmail.com</a> and we will do it for you.</li>
+  <li><strong>Delete your account.</strong> Open your account card on the Me tab, then Advanced → Delete account. This immediately and permanently removes your account and every book, thread and saved item in it. You can also email us at <a href="mailto:babyrockproject@gmail.com">babyrockproject@gmail.com</a> and we will do it for you.</li>
 </ul>
 
 <h2>Children</h2>

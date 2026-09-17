@@ -5,38 +5,186 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tracebook — Support</title>
 <link rel="stylesheet" href="style.css">
+<script>if (location.search.indexOf('app=1') !== -1) document.documentElement.className = 'app';</script>
 </head>
 <body>
 <main>
 <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav>
 
 <h1>Support</h1>
-<p class="meta">Tracebook for iOS</p>
+<p class="meta">Tracebook for iOS · Updated September 16, 2026</p>
 
-<p>Something confusing or broken? Email <a href="mailto:babyrockproject@gmail.com?subject=Tracebook%20feedback">babyrockproject@gmail.com</a>. It helps to mention your iPhone model, iOS version, and what you were doing when it went wrong. You can also tap <strong>Help &amp; Feedback</strong> on the Me tab, which starts an email with those details filled in.</p>
+<p>Something confusing or broken? Email <a href="mailto:babyrockproject@gmail.com?subject=Tracebook%20feedback">babyrockproject@gmail.com</a>. In the app, <strong>Me → Help &amp; Feedback → Email us</strong> starts the email with your app version and iOS version filled in. It helps to say what you were doing when it went wrong.</p>
+
+<h2>How Tracebook works</h2>
+<p>You talk (or type) about your day, and Tracebook turns what you said into short, sorted threads you can look back on. Four words cover most of it:</p>
+<dl>
+  <dt>Book</dt>
+  <dd>One thing you trace — your days, your hobbies, the people in your life, your training, your symptoms, or anything you describe. Every book has a name, an icon, a colour and a <strong>template</strong> that decides how its threads are organised. Book names are unique.</dd>
+  <dt>Thread</dt>
+  <dd>One fact, the unit of everything: <em>oatmeal</em>, <em>20 minutes</em>, <em>nailed the F chord</em>, <em>she seemed happy</em>. A sentence with four facts in it becomes four threads. Threads are yours to edit or delete.</dd>
+  <dt>Round</dt>
+  <dd>One send — a voice clip or a typed line. A round can add threads to several boxes at once.</dd>
+  <dt>Box</dt>
+  <dd>Where threads live on a day's page. In a Life book the boxes are six fixed <strong>categories</strong> (Food, Routine, Exercise, Location, Wellbeing, Other). In every other book they are <strong>subjects</strong> named from what you say — Programming, Jack, Lift, Migraine — and a subject box carries its threads as <strong>label: value</strong> pairs (<em>duration: 20 minutes</em>, <em>noticed: seemed happy</em>). Life threads carry <strong>details</strong> instead: time, duration and a note.</dd>
+</dl>
+
+<h3>Day to day</h3>
+<ol>
+  <li><strong>Create a book.</strong> Me → Books → New (or the book picker at the top of Trace). Give it a name, pick a template, then an icon and a colour. Your first book is a Life book called My Life.</li>
+  <li><strong>Tell it about your day.</strong> On the Trace tab, hold the green mic and speak, or type into <em>Add a thread…</em>. Each round is turned into threads and sorted into boxes on the day you are looking at.</li>
+  <li><strong>Read the day.</strong> Boxes are grouped by category or subject; tap a thread to edit it, or say a correction and the thread is refined by voice. Press and hold to enter edit mode and delete.</li>
+  <li><strong>Move between days.</strong> Use the week strip, the arrows beside the date, or the calendar; <em>Today</em> brings you back. Anything you add goes into the day on screen.</li>
+  <li><strong>Get inspired.</strong> The Inspire tab draws on the last two weeks of threads across all your books and suggests books, films, music, places, food and more. It needs an account.</li>
+  <li><strong>Everything else is on Me:</strong> your account and export, books, settings (reminder, default book), help, about, privacy and terms.</li>
+</ol>
+
+<h2>Templates, with an example page each</h2>
+<p>A template decides what a box is and which labels the threads use. Pick the closest one; if none fits, describe what you want and let <strong>Custom</strong> design the book.</p>
+
+<h3>Life</h3>
+<p class="note">Your day, with what you did, where you went, and how you felt.</p>
+<div class="page">
+  <div class="book"><i style="background:#237A56"></i>My Life</div>
+  <p class="said">“Woke up at 8, oatmeal and a wonderful coffee, ran 3 miles for an hour.”</p>
+  <div class="box wash-green"><div class="subject">Routine <small>1 thread</small></div>
+    <div class="row"><span class="v">woke up</span></div><ul class="bullets"><li>8:00</li></ul></div>
+  <div class="box wash-amber"><div class="subject">Food <small>2 threads</small></div>
+    <div class="row"><span class="v">oatmeal</span></div>
+    <div class="row"><span class="v">coffee</span></div><ul class="bullets"><li>wonderful</li></ul></div>
+  <div class="box wash-rose"><div class="subject">Exercise <small>1 thread</small></div>
+    <div class="row"><span class="v">ran 3 miles</span></div><ul class="bullets"><li>1 hour</li></ul></div>
+</div>
+<p>Six fixed categories; each thread can carry a time, a duration and a note as details.</p>
+
+<h3>Habits</h3>
+<p class="note">Your hobbies, with what you did, how long, where, and how you progressed.</p>
+<div class="page">
+  <div class="book"><i style="background:#B48A3C"></i>Habits</div>
+  <p class="said">“Spent a few more hours on app development at the office, fixed a few bugs and found my first tester.”</p>
+  <div class="box wash-amber"><div class="subject">Programming <small>4 threads</small></div>
+    <div class="row"><span class="v">a few more hours</span><span class="tag">duration</span></div>
+    <div class="row"><span class="v">office</span><span class="tag">location</span></div>
+    <div class="row"><span class="v">fixed a few bugs</span><span class="tag">progress</span></div>
+    <div class="row"><span class="v">found first tester</span><span class="tag">milestone</span></div></div>
+</div>
+<p>Each hobby or habit is a subject. Labels: <span class="labels"><span>duration</span><span>location</span><span>progress</span><span>milestone</span><span>challenge</span><span>mood</span></span></p>
+
+<h3>People</h3>
+<p class="note">Your social life, what happened, what you noticed, asked, felt, and thought.</p>
+<div class="page">
+  <div class="book"><i style="background:#3C6E7F"></i>People</div>
+  <p class="said">“Jack left his socks on the floor again, I have reminded him so many times; dinner with Sarah, she seemed happy, she is getting married in November.”</p>
+  <div class="box wash-blue"><div class="subject">Jack <small>2 threads</small></div>
+    <div class="row"><span class="v">socks on the floor again</span><span class="tag">noticed</span></div>
+    <div class="row"><span class="v">reminded him so many times</span><span class="tag">I asked</span></div></div>
+  <div class="box wash-rose"><div class="subject">Sarah <small>3 threads</small></div>
+    <div class="row"><span class="v">dinner</span></div>
+    <div class="row"><span class="v">seemed happy</span><span class="tag">noticed</span></div>
+    <div class="row"><span class="v">getting married in November</span><span class="tag">noticed</span></div></div>
+</div>
+<p>Each person is a subject. Only what you actually say is recorded — a feeling or a judgment becomes a thread only when you state it. Labels: <span class="labels"><span>noticed</span><span>they asked</span><span>I asked</span><span>I felt</span><span>I think</span><span>friction</span><span>memo</span><span>plan</span></span></p>
+
+<h3>Fitness</h3>
+<p class="note">Your training sessions, with exercises, results, duration, effort, recovery, and nutrition.</p>
+<div class="page">
+  <div class="book"><i style="background:#C9705C"></i>Fitness</div>
+  <p class="said">“Squats 3 sets of 20, lunges 3 sets of 20, then a protein shake, legs felt heavy.”</p>
+  <div class="box wash-rose"><div class="subject">Lift <small>4 threads</small></div>
+    <div class="row"><span class="v">squats 3 sets of 20</span></div>
+    <div class="row"><span class="v">lunges 3 sets of 20</span></div>
+    <div class="row"><span class="v">protein shake</span><span class="tag">nutrition</span></div>
+    <div class="row"><span class="v">legs felt heavy</span><span class="tag">effort</span></div></div>
+</div>
+<p>Each kind of session — Run, Lift, Climb, Yoga — is a subject; a second round about the same session on the same day joins its box. Labels: <span class="labels"><span>result</span><span>duration</span><span>effort</span><span>recovery</span><span>nutrition</span></span></p>
+
+<h3>Symptoms</h3>
+<p class="note">Your episodes, with what happened, how severe, how long, what triggered and helped them.</p>
+<div class="page">
+  <div class="book"><i style="background:#6E5A8E"></i>Symptoms</div>
+  <p class="said">“Migraine started after lunch, about a 6, slept badly last night, took ibuprofen.”</p>
+  <div class="box wash-plum"><div class="subject">Migraine <small>4 threads</small></div>
+    <div class="row"><span class="v">after lunch</span><span class="tag">time</span></div>
+    <div class="row"><span class="v">about a 6</span><span class="tag">severity</span></div>
+    <div class="row"><span class="v">slept badly last night</span><span class="tag">trigger</span></div>
+    <div class="row"><span class="v">ibuprofen</span><span class="tag">treatment</span></div></div>
+</div>
+<p>Each symptom is a subject. Labels: <span class="labels"><span>severity</span><span>duration</span><span>trigger</span><span>treatment</span><span>relief</span></span></p>
+
+<h3>Custom <small style="font-weight:400;color:#7A7A74">(beta)</small></h3>
+<p class="note">Describe what you want to trace, and the book is designed around it.</p>
+<p>Say what the book should trace, what matters to you and what a good page looks like — by voice or by typing. Tracebook may ask up to three quick questions, then shows you the design: a one-line summary, how threads are grouped, the labels with their meaning, and an example round. Change anything by saying so (“add a label for price”), then tap <em>Looks good</em>.</p>
+<div class="page">
+  <div class="book"><i style="background:#6E5A8E"></i>Wine</div>
+  <p class="said">“2019 Barolo, cherries and tar on the nose, long finish, 92.”</p>
+  <div class="box wash-plum"><div class="subject">2019 Barolo <small>3 threads</small></div>
+    <div class="row"><span class="v">cherries and tar</span><span class="tag">nose</span></div>
+    <div class="row"><span class="v">long</span><span class="tag">finish</span></div>
+    <div class="row"><span class="v">92</span><span class="tag">score</span></div></div>
+</div>
+<p>When your description fits one of the templates above, the book is built on that template. A book about <em>one</em> hobby or <em>one</em> person gets its own shape: every round about a practice session lands in one box (<em>Practice</em>, or <em>Lesson</em> when you say so), and every round about a call or a visit lands in one box (<em>Call</em>, <em>Visit</em>), with what you noticed or think inside it.</p>
+<div class="page">
+  <div class="book"><i style="background:#B48A3C"></i>Guitar</div>
+  <p class="said">“Practised scales for 20 minutes in the living room, finally nailed the F chord, fingers still hurt, felt great.”</p>
+  <div class="box wash-green"><div class="subject">Practice <small>6 threads</small></div>
+    <div class="row"><span class="v">scales</span></div>
+    <div class="row"><span class="v">20 minutes</span><span class="tag">duration</span></div>
+    <div class="row"><span class="v">living room</span><span class="tag">location</span></div>
+    <div class="row"><span class="v">nailed the F chord</span><span class="tag">milestone</span></div>
+    <div class="row"><span class="v">fingers hurt</span><span class="tag">challenge</span></div>
+    <div class="row"><span class="v">felt great</span><span class="tag">mood</span></div></div>
+</div>
+<div class="page">
+  <div class="book"><i style="background:#C9705C"></i>Mum</div>
+  <p class="said">“Mum called about Christmas again, wants us all there, I said we would see and she went quiet, I think she is lonely.”</p>
+  <div class="box wash-amber"><div class="subject">Call <small>4 threads</small></div>
+    <div class="row"><span class="v">about Christmas again</span></div>
+    <div class="row"><span class="v">wants us all there</span><span class="tag">they asked</span></div>
+    <div class="row"><span class="v">went quiet</span><span class="tag">noticed</span></div>
+    <div class="row"><span class="v">she is lonely</span><span class="tag">I think</span></div></div>
+</div>
+<p>A book's structure is fixed once it is created. <strong>Me → Manage books → ⋯ → How this book works</strong> shows a book's design at any time. Custom is in beta: the designs it produces will keep improving, and editing labels after creation is on the way.</p>
 
 <h2>Common questions</h2>
 
-<h2 style="font-size:18px">Do I need an account?</h2>
-<p>No. As a guest, everything stays on your phone. Signing in with Apple syncs your moments across devices and unlocks the Inspire tab.</p>
+<h3 class="q">Do I need an account?</h3>
+<p>No. As a guest, everything stays on your phone. Signing in — with Apple, Google, or a link sent to your email — syncs your books and threads across devices and unlocks the Inspire tab.</p>
 
-<h2 style="font-size:18px">I signed in and my earlier moments vanished.</h2>
-<p>They didn't. Moments logged as a guest are copied into your account the first time you sign in, then removed from the phone's local storage. If you sign out, the phone shows an empty log until you sign in again.</p>
+<h3 class="q">I signed in and my earlier threads vanished.</h3>
+<p>They didn't. Threads logged as a guest are copied into your account the first time you sign in, then removed from the phone's local storage. If you sign out, the phone shows an empty log until you sign in again.</p>
 
-<h2 style="font-size:18px">How do I edit or delete a moment?</h2>
-<p>Tap a moment to edit it. Press and hold any moment to enter edit mode, then tap the red minus to delete. Delete is also at the bottom of the editor.</p>
+<h3 class="q">How do I edit or delete a thread?</h3>
+<p>Tap a thread to edit it, or hold the mic in the editor and say the change (“make that 30 minutes”). Press and hold any thread to enter edit mode and tap the red minus to delete; Delete is also at the bottom of the editor.</p>
 
-<h2 style="font-size:18px">How do I log a past day?</h2>
-<p>Swipe left or right on the Today tab, use the arrows beside the date, or tap the calendar. Anything you type or say goes into the day on screen.</p>
+<h3 class="q">Why did a thread land in Other?</h3>
+<p>Other collects what fits no box: a Life thread outside the six categories, or a fact in another book with no subject around it. Tap the thread and change its category or subject, and the book remembers the subject for next time.</p>
 
-<h2 style="font-size:18px">How do I export my data?</h2>
-<p>Me tab → Export data. It hands a JSON file of all your trackers and moments to the iOS share sheet.</p>
+<h3 class="q">Can I change a book's template or labels?</h3>
+<p>Not yet. A book's template and labels are fixed once it is created, so its threads stay consistent; you can rename a book and change its icon and colour at any time, and create another book with a different template. <em>How this book works</em> (Me → Manage books → ⋯) shows the current design.</p>
 
-<h2 style="font-size:18px">How do I delete my account?</h2>
-<p>Me tab → Settings → Delete account. This permanently removes your account and everything in it. Or email us and we'll do it.</p>
+<h3 class="q">What does Custom do with what I say?</h3>
+<p>Your description (and any answers) is sent to our server and on to the AI service to design the book. The design and your description are kept on the book so you can see them later; nothing else about it is stored. See the <a href="privacy.html">Privacy Policy</a>.</p>
 
-<h2 style="font-size:18px">Why does the microphone need permission?</h2>
-<p>Only to record what you say; the recording is sent for transcription and not kept. See the <a href="privacy.html">Privacy Policy</a>.</p>
+<h3 class="q">How do I log a past day?</h3>
+<p>Swipe the week strip, use the arrows beside the date, or tap the calendar. Anything you type or say goes into the day on screen. Days with threads are marked with a dot.</p>
+
+<h3 class="q">Which voice engine am I using?</h3>
+<p>By default your iPhone transcribes what you say (Apple's speech recognition) and Tracebook sends the text. Some accounts use Gemini for voice instead, where the clip itself is sent to our server to be transcribed and understood in one step. Either way, the audio is not kept.</p>
+
+<h3 class="q">Why does the microphone need permission?</h3>
+<p>Only to hear what you say while the mic is held. See the <a href="privacy.html">Privacy Policy</a> for what happens to it.</p>
+
+<h3 class="q">Why does Inspire need an account, and why do suggestions not repeat?</h3>
+<p>Inspire sends your recent threads to the AI service, which we only do for accounts. It remembers which suggestions you have already seen, so the same one is not shown again for a good while and the mix keeps changing.</p>
+
+<h3 class="q">How do I export my data?</h3>
+<p>Me → your account card → Export data. Choose a spreadsheet (CSV) or a full backup (JSON) of every book and thread; it goes to the iOS share sheet.</p>
+
+<h3 class="q">Is my data backed up?</h3>
+<p>When you are signed in, your books and threads live in our database, which is copied every night and each copy is kept for 14 days. Guests should use Export data for a backup — a guest's data exists only on the phone.</p>
+
+<h3 class="q">How do I delete my account?</h3>
+<p>Me → your account card → Advanced → Delete account. This permanently removes your account and everything in it. Or email us and we'll do it.</p>
 
 <footer>© 2026 Tracebook</footer>
 </main>
