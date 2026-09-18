@@ -45,3 +45,34 @@ html.app main { padding-top: 12px; }
 .labels { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 0; }
 .labels span { font-size: 13px; padding: 3px 10px; border-radius: 999px; background: #E4EBE0; color: #3F6B4B; }
 .note { color: #7A7A74; font-size: 15px; }
+
+/* How it works: a say -> get figure, mini cards beside the two definitions,
+   and icon bullets for the day-to-day steps. */
+.flow { display: flex; align-items: stretch; gap: 10px; margin: 18px 0 6px; }
+.flow .bubble { flex: 1; background: #FCFBF8; border: 1px solid #E8E5DD; border-radius: 22px 22px 22px 6px; padding: 14px 16px; font-size: 15px; line-height: 1.45; color: #263A35; position: relative; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.flow .bubble .who { display: flex; align-items: center; gap: 8px; color: #7A7A74; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.flow .arrow { display: flex; align-items: center; color: #237A56; flex: none; }
+.flow .page { flex: 1.2; margin: 0; padding: 12px 12px 6px; }
+.flow .page .box { padding: 8px 8px 2px; margin-bottom: 6px; }
+.flow .page .row { padding: 6px 10px; font-size: 13px; margin-bottom: 4px; }
+.flow .page .subject { font-size: 13px; margin-bottom: 4px; }
+.flow .page .bullets { font-size: 11px; margin-left: 14px; }
+@media (max-width: 480px) { .flow { flex-direction: column; } .flow .arrow { transform: rotate(90deg); justify-content: center; } }
+.defs { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 14px 0; }
+.def { display: flex; gap: 14px; align-items: flex-start; }
+.def .pic { flex: none; width: 150px; }
+.def dt { margin: 0 0 4px; font-weight: 600; }
+.def dd { margin: 0; }
+.mini-book { display: flex; align-items: center; gap: 10px; background: #FCFBF8; border: 1px solid #E8E5DD; border-radius: 16px; padding: 10px 12px; }
+.mini-book i { width: 34px; height: 34px; border-radius: 50%; background: #E4EBE0; display: flex; align-items: center; justify-content: center; color: #237A56; flex: none; }
+.mini-book b { display: block; font-size: 14px; color: #263A35; }
+.mini-book small { color: #7A7A74; font-size: 11px; }
+.mini-thread { background: #E4EBE0; border-radius: 14px; padding: 8px; }
+.mini-thread .row { margin: 0; font-size: 13px; padding: 7px 10px; }
+.mini-thread .tag { color: #3F6B4B; }
+.steps { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 12px; }
+.steps li { display: flex; gap: 12px; align-items: flex-start; }
+.steps .ic { flex: none; width: 36px; height: 36px; border-radius: 50%; background: #E4EBE0; color: #237A56; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+.steps svg, .flow svg, .mini-book svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.flow .arrow svg { width: 26px; height: 26px; }
+@media (max-width: 480px) { .def { flex-direction: column; } .def .pic { width: 100%; max-width: 260px; } }
